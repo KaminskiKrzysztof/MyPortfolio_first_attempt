@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	// --background-backgroundcolor:#0a0908;
+	// --background-backgroundcolor: #080708;
+	--background-backgroundcolor: #1c1e1f;
+	
+	--text-color: rgb(0, 0, 0);
+}
+
+body {
+	background-color: var(--background-backgroundcolor);
+	color: var(--text-color);
+}
