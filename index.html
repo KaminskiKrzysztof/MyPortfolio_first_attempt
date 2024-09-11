@@ -19,34 +19,53 @@
 		<link rel="stylesheet" href="/dist/css/main.min.css" />
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg bg-dark py-4 fixed-top">
-	<div class="container">
-		<a class="navbar-brand" href="#"
-			>My <span class="nav-span-color">Portfolio</span></a
-		>
-		<button
-			class="navbar-toggler"
-			type="button"
-			data-bs-toggle="collapse"
-			data-bs-target="#navbarNavAltMarkup"
-			aria-controls="navbarNavAltMarkup"
-			aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav ms-auto">
-				<a class="nav-link" href="#home">Home</a>
-				<a class="nav-link" href="#aboutme">About Me</a>
-				<a class="nav-link" href="#portfolio">Portfolio</a>
-				<a class="nav-link" href="#contact">Contact</a>
+		<nav class="navbar navbar-expand-lg bg-dark py-4 fixed-top mb-2">
+			<div class="container">
+				<a class="navbar-brand" href="#home"
+					>My <span class="nav-span-color">Portfolio</span></a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ms-auto py-4">
+						<a class="nav-link" href="#home">Home</a>
+						<a class="nav-link" href="#aboutme">About Me</a>
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+						<a class="nav-link" href="#contact">Contact</a>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</nav>
+		</nav>
 
+		<main>
+			<section id="home" class="home-boxes">
+				<div class="container text-start">
+					<div class="row">
+						<div class="text-box">
+							<p class="heading-p">Hello everyone! My name is</p>
+							<p class="display-1 middle-p">Krzysztof Kamiński</p>
+							<p class="last-p">
+								I am a
+								<span class="text-span">Junior Front-End Developer </span>&
+								<span class="text-span">Software Tester</span>
+							</p>
+						</div>
 
-<section id="home" class="home"></section>
+						<div class="img-box">
+							<img src="../src/img/me_image.png" alt="Me img" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
