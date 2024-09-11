@@ -4,15 +4,47 @@
 	padding: 0;
 }
 
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
 :root {
-	// --background-backgroundcolor:#0a0908;
-	// --background-backgroundcolor: #080708;
 	--background-backgroundcolor: #1c1e1f;
-	
-	--text-color: rgb(0, 0, 0);
+	--text-color: #f7f0f5;
 }
 
 body {
 	background-color: var(--background-backgroundcolor);
 	color: var(--text-color);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+}
+
+// nav
+
+.navbar-brand {
+	color: var(--text-color);
+	font-size: 2.2rem;
+
+	span {
+		color: #30c5ff;
+	}
+}
+
+
+.nav-link{
+	color: var(--text-color);
+}
+
+
+.nav-link,
+.navbar-toggler-icon {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+.navbar-toggler {
+	padding: 1em;
+	
 }
