@@ -11,7 +11,8 @@ html {
 
 :root {
 	--background-backgroundcolor: #1c1e1f;
-	--text-color: #f7f0f5;
+	// --text-color: #f7f0f5;
+	--text-color: #5c5c5c;
 	--accent-color: #30c5ff;
 }
 
@@ -32,13 +33,13 @@ body {
 	cursor: pointer;
 
 	span {
-		color: var(--accent-color);
+		color: black;
 		transition: color 0.3s, scale 0.3s;
 	}
 }
 
 .nav-link {
-	color: var(--text-color);
+	color: black;
 	margin-right: 2em;
 	border-bottom: 0px solid transparent;
 	transition: color 0.3s, scale 0.3s;
@@ -52,7 +53,7 @@ body {
 }
 
 .navbar-toggler {
-	border: 1px solid var(--accent-color);
+	border: 1px solid black;
 }
 
 // home
@@ -68,7 +69,8 @@ body {
 		max-width: 100rem;
 		.text-box {
 			.heading-p {
-				color: var(--text-color);
+				// color: var(--text-color);
+				color: black;
 				font-size: 2.3rem;
 				font-weight: bold;
 				cursor: pointer;
@@ -77,13 +79,15 @@ body {
 			.text-name {
 				font-size: 5rem;
 				font-weight: bold;
+				color: black;
 			}
 			.last-p {
 				font-size: 2.3rem;
 				font-weight: bold;
+				color: black;
 			}
 			.text-span {
-				color: var(--accent-color);
+				color: #5c5c5c;
 			}
 
 			.icon-box {
@@ -99,7 +103,7 @@ body {
 					height: 6rem;
 					text-decoration: none;
 					margin-top: 2rem;
-					border: 3px solid var(--accent-color);
+					border: 3px solid black;
 					border-radius: 50%;
 					transition: scale 0.3s, box-shadow 0.2s;
 				}
@@ -114,12 +118,12 @@ body {
 		top: -5rem;
 		height: 40rem;
 		width: 40rem;
-		border: 3px solid var(--accent-color);
+		border: 3px solid black;
 		border-radius: 50%;
 		transition: border 0.3s, scale 0.3s, border-radius 0.3s, box-shadow 0.3s;
 	}
 	.home-boxes .text-box .icon-box a i {
-		color: var(--accent-color);
+		color: black;
 		font-size: 5rem;
 		border: none;
 		border-radius: 50%;
@@ -199,12 +203,12 @@ body {
 	.first {
 		background-color: #3e3dcc;
 	}
-	.second {
-		background-color: #050404;
-	}
+
+	.second,
 	.third {
 		background-color: #232323;
 	}
+
 	.fourth,
 	.fifth {
 		background-color: #212529;
@@ -217,6 +221,10 @@ body {
 		border-radius: 15px;
 		overflow: hidden;
 		width: 90%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 
 		.portfolio-img {
 			height: 50vh;
@@ -234,28 +242,35 @@ body {
 			text-align: center;
 			margin: 1em 0 1em 0;
 			text-decoration: underline;
+			color: black;
 		}
 		.portfolio-tech {
 			font-size: 2rem;
 			margin-left: 0.5em;
-			font-weight: 500;
+			font-weight: 600;
 			margin-bottom: 0.5em;
+			color: black;
 		}
 		.portfolio-text {
 			margin-left: 0.5em;
 			font-size: 1.7rem;
+			color: black;
+			font-weight: 600;
 		}
 		.portfolio-btn {
+			position: relative;
 			margin-top: 2em;
+			margin-bottom: 2em;
 			height: 4em;
-			width: 100%;
-			transition: 0.5s;
-			border-radius: 0 0 15px 15px;
+			width: 50%;
+			border-radius: 15px;
+			border: 2px solid black;
+			transition: all 0.5s;
 
 			a {
 				text-decoration: none;
 				font-size: 2rem;
-				color: var(--accent-color);
+				color: black;
 				font-weight: bold;
 			}
 		}
@@ -267,34 +282,41 @@ body {
 .contact {
 	padding-top: 5em;
 	height: 100%;
-	background-color: rgb(41, 38, 38);
+	background: var(--background-backgroundcolor);
 }
 
 .contact-heading {
 	font-weight: bold;
 	cursor: pointer;
+	color: black;
 }
 
 .whole-contact-box {
 	margin-top: 3em;
 }
 
-
 .contact-img {
 	margin-top: 3em;
-	border: 3px solid white;
+	border: 3px solid rgb(0, 0, 0);
 	width: 30rem;
 	height: 30rem;
+}
+
+.border-form {
+	border: 3px solid black;
+	border-radius: 8px;
 }
 
 .contact input,
 .contact select,
 .contact textarea {
 	font-size: 1.6rem;
+	background: black;
 }
 .contact textarea {
 	height: 25rem;
 	resize: none;
+	background: black;
 }
 
 .contact-btn {
@@ -304,18 +326,30 @@ body {
 	outline: none;
 	padding: 0.4em;
 	border-radius: 8px;
-	color: var(--text-color);
-	border: 2px solid var(--text-color);
+	color: black;
+	border: 2px solid black;
 	transition: background-color 0.3s, box-shadow 0.4s, border 0.2s;
 }
 
 .label-text {
 	margin-bottom: 1em;
 	font-weight: bold;
+	color: black;
+}
+
+.form-control {
+	border: 2px solid black;
+}
+
+.contact-form-heading {
+	color: black;
+	font-size: 1.7em;
 }
 
 .contact-text {
 	font-size: 1.3em;
+	color: black;
+	font-weight: 600;
 }
 
 .contact-img {
@@ -330,15 +364,16 @@ body {
 
 .animation-box input:focus,
 .animation-box textarea:focus {
+	background: black;
 	outline: none;
-	border: solid 1px var(--accent-color);
-	box-shadow: 0 0 20px var(--accent-color);
+	border: solid 1px var(--text-color);
+	box-shadow: 0 0 20px var(--text-color);
 }
 
 .contact-btn:hover {
-	box-shadow: 0 0 15px var(--accent-color);
-	background-color: var(--accent-color);
-	border: 2px solid var(--accent-color);
+	box-shadow: 0 0 15px var(--text-color);
+	background-color: var(--text-color);
+	border: 2px solid var(--text-color);
 }
 
 // footer
@@ -368,16 +403,6 @@ body {
 	.footer-p {
 		padding-top: 0.5em;
 		font-size: 2rem;
-	}
-}
-
-@keyframes scrollLeft {
-	0% {
-		transform: translateX(700px);
-	}
-
-	100% {
-		transform: translateX(-800px);
 	}
 }
 
@@ -411,40 +436,40 @@ body {
 // hovers
 
 .header__arrow:hover {
-	color: var(--accent-color);
-	border: 2px solid var(--accent-color);
-	box-shadow: 0 0 10px var(--accent-color);
+	color: black;
+	border: 2px solid black;
+	box-shadow: 0 0 10px black;
 }
 
 .icon-box a:hover {
 	scale: 1.2;
-	box-shadow: 0 0 5px rgb(254, 255, 254);
+	box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 .home-img:hover,
 .contact-img:hover {
-	border: 1px solid white;
+	border: 1px solid rgb(0, 0, 0);
 	scale: 1.1;
 	border-radius: 0;
-	box-shadow: 0 0 25px var(--text-color);
+	box-shadow: 0 0 25px black;
 }
 
 .card:hover {
-	box-shadow: 0 0 25px var(--accent-color);
+	box-shadow: 0 0 25px black;
 	scale: 1.1;
 }
 
 .portfolio-box:hover {
 	scale: 0.8;
-	box-shadow: 0 0 20px var(--accent-color);
+	box-shadow: 0 0 30px black;
 }
 
 .portfolio-btn:hover {
-	box-shadow: 0 0 15px var(--accent-color);
+	scale: 1.2;
 }
 
 .border:hover {
-	box-shadow: 0 0 15px var(--accent-color);
+	box-shadow: 0 0 15px black;
 }
 
 // media
@@ -452,10 +477,10 @@ body {
 @media (min-width: 992px) {
 	.nav-link:hover {
 		scale: 1.3;
-		color: var(--accent-color);
+		color: var(--text-color);
 	}
 	.navbar-brand:hover {
-		color: var(--accent-color);
+		color: black;
 		scale: 1.3;
 
 		span {
@@ -526,4 +551,14 @@ body {
 	animation: scrollAppear linear;
 	animation-timeline: view();
 	animation-range: entry 0;
+}
+
+@keyframes scrollLeft {
+	0% {
+		transform: translateX(700px);
+	}
+
+	100% {
+		transform: translateX(-800px);
+	}
 }
