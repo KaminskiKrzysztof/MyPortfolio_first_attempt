@@ -354,6 +354,10 @@ body {
 	font-size: 1.3em;
 	color: var(--accent-color);
 	font-weight: 600;
+
+	span {
+		color: rgb(255, 255, 255);
+	}
 }
 
 .contact-img {
@@ -387,7 +391,7 @@ body {
 		.tech-item {
 			font-size: 3em;
 			margin-left: 2em;
-			animation: scrollLeft 15s linear infinite;
+			animation: scrollLeft 19s linear infinite;
 			color: var(--accent-color);
 
 			i {
@@ -570,10 +574,10 @@ body {
 
 @keyframes scrollLeft {
 	0% {
-		transform: translateX(700px);
+		transform: translateX(900px);
 	}
 
 	100% {
-		transform: translateX(-800px);
+		transform: translateX(-1050px);
 	}
 }
