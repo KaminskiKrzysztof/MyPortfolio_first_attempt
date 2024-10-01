@@ -74,18 +74,18 @@ body {
 		.text-box {
 			.heading-p {
 				color: var(--accent-color);
-				font-size: 2.3rem;
+				font-size: 2.1rem;
 				font-weight: bold;
 				cursor: pointer;
 			}
 
 			.text-name {
-				font-size: 5rem;
+				font-size: 4.7rem;
 				font-weight: bold;
 				color: var(--accent-color);
 			}
 			.last-p {
-				font-size: 2.3rem;
+				font-size: 2.1rem;
 				font-weight: bold;
 				color: var(--accent-color);
 			}
@@ -176,7 +176,7 @@ body {
 }
 
 .card-title {
-	font-size: 2rem;
+	font-size: 2.4rem;
 	text-align: center;
 	margin-bottom: 1em;
 	font-weight: bold;
@@ -184,7 +184,7 @@ body {
 }
 .card-text {
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	padding: 1.4em;
 	color: black;
@@ -203,20 +203,6 @@ body {
 		color: white;
 	}
 
-	.first {
-		background-color: #3e3dcc;
-	}
-
-	.second,
-	.third {
-		background-color: #232323;
-	}
-
-	.fourth,
-	.fifth {
-		background-color: #212529;
-	}
-
 	.portfolio-box {
 		border: 2px solid black;
 		margin-bottom: 2em;
@@ -228,6 +214,11 @@ body {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		background: linear-gradient(
+			0deg,
+			hsla(337, 86%, 42%, 1) 21%,
+			hsla(0, 0%, 100%, 1) 100%
+		);
 
 		.portfolio-img {
 			height: 50vh;
