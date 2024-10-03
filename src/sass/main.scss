@@ -357,8 +357,8 @@ body {
 .contact-img {
 	border-radius: 15px;
 	transition: all 0.3s;
-	height: 60%;
-	width: 60%;
+	height: 50%;
+	width: 55%;
 	object-fit: cover;
 	border: 3px solid var(--accent-color);
 }
@@ -454,6 +454,12 @@ body {
 	scale: 1.1;
 	border-radius: 0;
 	box-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.contact-img:hover {
+	height: 60%;
+	width: 60%;
+	scale: 1;
 }
 
 .card:hover {
