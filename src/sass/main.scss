@@ -29,6 +29,10 @@ body {
 }
 // nav
 
+.navbar {
+	background-color: black;
+}
+
 .navbar-brand {
 	color: white;
 	font-size: 3rem;
@@ -337,6 +341,7 @@ body {
 
 .form-control {
 	border: 2px solid rgb(255, 255, 255);
+	color: white;
 }
 
 .contact-form-heading {
@@ -357,9 +362,9 @@ body {
 .contact-img {
 	border-radius: 15px;
 	transition: all 0.3s;
-	height: 50%;
-	width: 55%;
-	object-fit: cover;
+	object-fit: fill;
+	height: 40rem;
+	width: 30rem;
 	border: 3px solid var(--accent-color);
 }
 
@@ -450,16 +455,16 @@ body {
 
 .home-img:hover,
 .contact-img:hover {
-	border: 1px solid rgb(255, 255, 255);
+	border: 3px solid rgb(255, 255, 255);
 	scale: 1.1;
-	border-radius: 0;
+	border-radius: 25px;
 	box-shadow: 0 0 25px rgb(255, 255, 255);
 }
 
 .contact-img:hover {
-	height: 60%;
-	width: 60%;
-	scale: 1;
+	scale: 1.1;
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 0;
 }
 
 .card:hover {
