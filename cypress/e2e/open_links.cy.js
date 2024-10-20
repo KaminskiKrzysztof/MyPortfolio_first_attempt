@@ -8,6 +8,6 @@ describe('open_links', () => {
 		cy.get('.linkedin-link').click();
 		cy.get('.footer').scrollIntoView();
 		cy.wait(1000);
-		cy.get('.go-up > .go-up-arrow').click();
+		cy.get('#scrollToTop').get('.go-up-arrow').click()
 	});
 });
